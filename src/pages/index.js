@@ -1,3 +1,18 @@
-import React from "react"
+import React from 'react'
+// import from 'https://use.typekit.net/sra3qyg.css'
+import NavBar from '../components/nav.js'
 
-export default () => <div>Hello world!</div>
+const Home = () => {
+   return (
+    <div>
+    <header>
+         <NavBar/>
+    </header>
+
+      <div className="wide">
+          Hello.
+    </div>
+    </div>  
+   )
+}
+export default Home 
