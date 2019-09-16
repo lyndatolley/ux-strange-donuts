@@ -1,6 +1,6 @@
 import React from 'react'
 // import from 'https://use.typekit.net/sra3qyg.css'
-import NavBar from '../components/nav.js'
+import NavBar from '../components/navRE.js'
 
 const Home = () => {
    return (
@@ -9,7 +9,7 @@ const Home = () => {
          <NavBar/>
     </header>
 
-      <div className="wide">
+      <div className="body">
           Hello.
     </div>
     </div>  
