@@ -8,7 +8,7 @@ const path = require('path');
 
 module.exports = {
   plugins: [
-    // 'react-burger-menu',
+    'gatsby-plugin-styled-components',
     'gatsby-plugin-sass',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
