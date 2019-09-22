@@ -111,6 +111,14 @@ const ThumbnailpinkRainbow = props => (
      </ThumbnailShape>
    </ThumbNailWrap>
  )
+ const ThumbnailBacon2= props => (
+  <ThumbNailWrap id="bacon" className="tWrap">
+    <DonutImg src={props.donutImage} alt="" className="showDone" id="pie" />
+    <ThumbnailTitle id="_ttitle">{props.title}</ThumbnailTitle>
+    <ThumbnailShape id="shape">
+    </ThumbnailShape>
+  </ThumbNailWrap>
+)
  const Thumbnaildong= props => (
    <ThumbNailWrap id="ding" className="tWrap">
      <DonutImg src={props.donutImage} alt="" className="showDone" />
@@ -121,7 +129,7 @@ const ThumbnailpinkRainbow = props => (
  )
  const ThumbnailBart= props => (
    <ThumbNailWrap id="revenge" className="tWrap pbj">
-     <DonutImg src={props.donutImage} id="pbj" alt="" className="showDone" />
+     <DonutImg src={props.donutImage} alt="" className="showDone" />
      <ThumbnailTitle id="_ttitle">{props.title}</ThumbnailTitle>
      <ThumbnailShape id="shape">
      </ThumbnailShape>
@@ -143,6 +151,70 @@ const ThumbnailpinkRainbow = props => (
      </ThumbnailShape>
    </ThumbNailWrap>
  )
+ const Thumbnailchip= props => (
+  <ThumbNailWrap id="cocoa" className="tWrap">
+    <DonutImg src={props.donutImage} alt="" className="showDone" id="chip"/>
+    <ThumbnailTitle id="_ttitle">{props.title}</ThumbnailTitle>
+    <ThumbnailShape id="shape">
+    </ThumbnailShape>
+  </ThumbNailWrap>
+)
+
+const ThumbnaildrinkG= props => (
+  <ThumbNailWrap id="revenge" className="tWrap pbj">
+    <DonutImg src={props.donutImage} id="coffee" alt="" className="showDone" />
+    <ThumbnailTitle id="_ttitle2">{props.title}</ThumbnailTitle>
+    <ThumbnailShape id="shape">
+    </ThumbnailShape>
+  </ThumbNailWrap>
+)
+const ThumbnaildrinkGk= props => (
+  <ThumbNailWrap id="revenge" className="tWrap pbj">
+    <DonutImg src={props.donutImage} id="cM" alt="" className="showDone" />
+    <ThumbnailTitle id="_ttitle2">{props.title}</ThumbnailTitle>
+    <ThumbnailShape id="shape">
+    </ThumbnailShape>
+  </ThumbNailWrap>
+)
+const ThumbnaildrinkB= props => (
+  <ThumbNailWrap id="cocoa" className="tWrap pbj">
+    <DonutImg src={props.donutImage} id="coffee" alt="" className="showDone" />
+    <ThumbnailTitle id="_ttitle2">{props.title}</ThumbnailTitle>
+    <ThumbnailShape id="shape">
+    </ThumbnailShape>
+  </ThumbNailWrap>
+)
+const ThumbnaildrinkBM= props => (
+  <ThumbNailWrap id="cocoa" className="tWrap pbj">
+    <DonutImg src={props.donutImage} id="milk" alt="" className="showDone" />
+    <ThumbnailTitle id="_ttitle2">{props.title}</ThumbnailTitle>
+    <ThumbnailShape id="shape">
+    </ThumbnailShape>
+  </ThumbNailWrap>
+)
+const ThumbnaildrinkB2= props => (
+  <ThumbNailWrap id="cocoa" className="tWrap pbj">
+    <DonutImg src={props.donutImage} id="coffee2" alt="" className="showDone" />
+    <ThumbnailTitle id="_ttitle2">{props.title}</ThumbnailTitle>
+    <ThumbnailShape id="shape">
+    </ThumbnailShape>
+  </ThumbNailWrap>
+)
+const Thumbnailshots = props => (
+  <ThumbNailWrap id="pink" className="tWrap">
+    <ThumbnailTitle id="_ttitle2">{props.title}</ThumbnailTitle>
+    <ThumbnailShape id="shape" className="show">
+    </ThumbnailShape>
+  </ThumbNailWrap>
+)
+const Thumbnailstraw = props => (
+  <ThumbNailWrap id="pink" className="tWrap">
+    <DonutImg src={props.donutImage} id="strawbery" alt="" className="showDone"/>
+    <ThumbnailTitle id="_ttitle3">{props.title}</ThumbnailTitle>
+    <ThumbnailShape id="shape" className="show">
+    </ThumbnailShape>
+  </ThumbNailWrap>
+)
  
 const Home = () => {
    return (
@@ -231,8 +303,78 @@ const Home = () => {
                   </div>
             
          </div>
+         <div className="classics">
+               <h3 className="sectionTitle">Handpies</h3>
+               <div className="donut_sections">
+               <ThumbnailBacon2 href = "/rainbowpony"
+                     title="Apple Pie"
+                     donutImage= {imageList.handpie}
+                  />
+                  </div>
             
+         </div>
+         <div className="classics">
+               <h3 className="sectionTitle">Cookies</h3>
+               <div className="donut_sections">
+               <Thumbnailchip href = "/rainbowpony"
+                     title="Chocolate Chip"
+                     donutImage= {imageList.cookie}
+                  />
+                  </div>
             
+         </div>
+      </div>
+      <div id="drinks">
+          <div className="classics">
+                  <h3 className="sectionTitle">Coffee</h3>
+                  <div className="donut_sections">
+                    <ThumbnaildrinkG href = "/rainbowpony"
+                          title="Drip Coffee"
+                          donutImage= {imageList.coffee}
+                        />
+                    <ThumbnaildrinkB href = "/rainbowpony"
+                          title="Latte"
+                          donutImage= {imageList.lattes}
+                        />
+                   <ThumbnaildrinkB2 href = "/rainbowpony"
+                          title="Nitrobrew"
+                          donutImage= {imageList.brew}
+                        />
+                    <Thumbnailshots href = "/rainbowpony"
+                          title="Shots"
+                        />
+                   </div>
+                
+          </div>
+          <div className="classics">
+                  <h3 className="sectionTitle">Milk</h3>
+                  <div className="donut_sections">
+                    <ThumbnaildrinkBM href = "/rainbowpony"
+                          title="2% percent"
+                          donutImage= {imageList.two}
+                        />
+                   <Thumbnailstraw href = "/rainbowpony"
+                          title="Strawberry"
+                          donutImage= {imageList.berry}
+                        />
+                    <ThumbnaildrinkGk href = "/rainbowpony"
+                          title="Chocolate Milk"
+                          donutImage= {imageList.chocoM}
+                        />
+                   </div>
+            
+          </div>
+          <div className="classics">
+                  <h3 className="sectionTitle">Water</h3>
+                  <div className="donut_sections">
+                    <ThumbnaildrinkBM href = "/rainbowpony"
+                          title="16oz"
+                          donutImage= {imageList.water}
+                        />
+                   </div>
+            
+          </div>
+          
       </div>
     </div>
     </div>  

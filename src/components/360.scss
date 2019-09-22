@@ -10,6 +10,7 @@
     padding: 0;
     margin: 0;
 
+
 }
 
 
@@ -153,7 +154,7 @@ body {
     width: 100%;
 }
 .navWrap{
-    position: absolute;
+    position: fixed;
     // display: flex;
     // display: absolute;
     z-index: 10000;
@@ -522,7 +523,7 @@ body {
         position: absolute;
         top: -35px;
         left: -17px;
-        width: 136px;
+        width: 127px;
     }
 
     #pinkMagic #shape{
@@ -563,5 +564,17 @@ body {
         left: 10px;
         z-index: 200;
         position: absolute;
+    }
+    #bacon #pie{
+        transform: rotate(30deg);
+        width: 122.82px;
+        left: -8px;
+    }
+    #cocoa #chip{
+        position: absolute;
+        top: -39px;
+        left: -9px; 
+        width: 128px;
+
     }
 }

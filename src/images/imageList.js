@@ -23,6 +23,15 @@ import cinnamon from "./menu/treats/Cinnamon Roll.png";
 import chocolateChip from "./menu/treats/cookie.png";
 import pie from "./menu/treats/handpie.png";
 
+// drinks
+import drip from "./menu/drinks/thumbnails/dripCoffee.png";
+import latte from "./menu/drinks/thumbnails/latte.png";
+import nitro from "./menu/drinks/thumbnails/nitroBrew.png";
+import twoPercent from "./menu/drinks/thumbnails/milk.png";
+import chocolate from "./menu/drinks/thumbnails/chocolate.png";
+import strawberry from "./menu/drinks/thumbnails/strawberry.png";
+import bottle from "./menu/drinks/thumbnails/water.png";
+
 const imageList = {
     home: homeImg,
     exit: exitButton,
@@ -44,7 +53,14 @@ const imageList = {
     cinnamonRoll: cinnamon,
     cookie: chocolateChip,
     handpie: pie,
-    
+    coffee: drip,
+    lattes: latte,
+    brew: nitro,
+    two: twoPercent,
+    chocoM: chocolate,
+    berry: strawberry,
+    water: bottle,
+
 
 
 };
