@@ -10,6 +10,10 @@ import "../components/styles.scss"
 import "../components/320.scss"
 import "../components/340.scss"
 import "../components/360.scss"
+import "../components/400.scss"
+import "../components/to389.scss"
+import "../components/to768.scss"
+import "../components/ipads.scss"
 
 
 const ThumbnailTitle = styled.h3`
@@ -215,16 +219,43 @@ const Thumbnailstraw = props => (
     </ThumbnailShape>
   </ThumbNailWrap>
 )
+
  
 const Home = () => {
-   return (
+  return (
     <div>
     <header>
          <NavBar/>
     </header>
+    <ul id="shortcuts">
+        <li>
+          <a href="#donuts">Donuts</a>
+        </li>
+        <li>
+          <a href="#baked_treats">Baked Treats</a>
+        </li>
+        <li>
+          <a href="#drinks">Drinks</a>
+        </li>
+      </ul>
 
       <div className="body">
         <div id="donuts"> 
+        <div className="classics">
+          <h3 className="sectionTitle" id="strange">Stranger</h3>
+          <div className="donut_sections">
+            <a className="strange_wrap">
+              <div className="turd_content">
+                <img src={imageList.turd_thB} class="turd_thumb"/>
+                <div className="strangeText">
+                  <h3 className="strangeTitle1">Introducing the</h3>
+                  <h2 className="strangeTitle2">Turd Burgler</h2>
+                </div>
+              </div>
+              <div className="turdShape"/>
+            </a>
+          </div>
+        </div>
             <div className="classics">
                <h3 className="sectionTitle">Classics</h3>
                <div className="donut_sections">

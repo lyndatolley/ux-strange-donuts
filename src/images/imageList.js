@@ -4,6 +4,7 @@ import shoppingBag from "./icons/Framebag.svg";
 
 // Donuts
 import theTurd from "./menu/stranger/turd.png";
+import TurdThmb from "./menu/stranger/turd_thumbnail.png"
 import rainbowPony from "./menu/classics/RainbowPony_0519-1.png";
 import glazedDone from "./menu/classics/glazed.png";
 import chocolateFatSteve from "./menu/classics/ChocolateFatSteve.png";
@@ -60,7 +61,7 @@ const imageList = {
     chocoM: chocolate,
     berry: strawberry,
     water: bottle,
-
+    turd_thB: TurdThmb,
 
 
 };

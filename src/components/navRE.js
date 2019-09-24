@@ -6,12 +6,13 @@ import "../components/omnes.css"
 import "../components/styles.scss"
 
 class NavBar extends React.Component {
-    state = { showMenu: false }
-
+    state = { showMenu: false, bagS: true }
   
     toggleMenu = () => {
       this.setState({
-        showMenu: !this.state.showMenu
+        showMenu: !this.state.showMenu,
+        bagS: !this.state.bagS
+
       })
     }
 
@@ -20,10 +21,11 @@ class NavBar extends React.Component {
   
     render() {
       const menuVis = this.state.showMenu ? 'show' : 'hide';
+      const bagVis = this.state.bagS ? 'show' : 'hide';
     
     
       return (
-       <div className="navWrap">
+       <div className={`navWrap ${menuVis}`}>
            <div className="navVisible">
              <a className="mobile-nav-left" onClick={this.toggleMenu}>
                  <img
@@ -32,7 +34,7 @@ class NavBar extends React.Component {
                 />
                 <p id="statusNav">Menu</p></a>
                 <div className="mobile-nav-right">
-                <a  id="bag" href="/bag">
+                <a  id={`bag_${bagVis}`} href="/bag">
                  <img
                     src={imageList.bag}
                     alt="shopping bag"
@@ -44,7 +46,7 @@ class NavBar extends React.Component {
                 /> </a>
                 </div>
             </div>
-          <div className={`menu-${menuVis}`} id="full">
+          <div className="menu" id="full">
           <nav className="mobile-nav-wrap" role="navigation">
             <ul className="mobile-header-nav">
                 <li><Link to = "/dones2drinks">Dones 2 Drinks</Link></li>
