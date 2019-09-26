@@ -33,6 +33,9 @@ import chocolate from "./menu/drinks/thumbnails/chocolate.png";
 import strawberry from "./menu/drinks/thumbnails/strawberry.png";
 import bottle from "./menu/drinks/thumbnails/water.png";
 
+import increase from "./icons/plus.svg";
+import decrease from "./icons/minus.svg";
+
 const imageList = {
     home: homeImg,
     exit: exitButton,
@@ -62,6 +65,8 @@ const imageList = {
     berry: strawberry,
     water: bottle,
     turd_thB: TurdThmb,
+    plus: increase,
+    minus: decrease,
 
 
 };

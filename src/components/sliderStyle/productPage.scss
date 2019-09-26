@@ -1,0 +1,70 @@
+@media only screen and (max-width: 320px) {
+    .product-body{
+        margin: 0px;
+
+    }
+    body{
+        margin: 0px;
+    }
+    .carousel{
+        background: radial-gradient(134.1% 61.32% at 53.6% 39.63%, #359768 0%, #295A43 100%);
+    }
+
+    .carousel-item{
+        display: flex;
+        flex-direction: column;
+    }
+    .imageWrap{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .exlDaM {width: 100%;
+        margin: 0px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        background: radial-gradient(134.1% 61.32% at 53.6% 39.63%, #359768 0%, #295A43 100%);
+    }
+    .item_price{
+        color: white;
+        font-size: 18px;
+        font-family: Omnes SemiCond;
+        font-style: normal;
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 2%;
+    }
+    .carousel-info{
+
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    }
+    .item-category-info{
+        font-size: 12px;
+        height: 31px;
+        width: 140px;
+    }
+    .item_category{
+        color: white;
+        margin: 2% 7% 0 0;
+        font-family: Omnes SemiCond;
+        font-style: normal;
+        font-weight: 500;
+    }
+    .item_calories{
+        color: white;
+        margin: 2% 7% 0 0;
+        font-family: Omnes SemiCond;
+        font-style: normal;
+        font-weight: 500;
+    }
+    .item_title{
+        text-align: center;
+        margin-top: 0%;
+        margin-bottom: 0;
+    }
+}

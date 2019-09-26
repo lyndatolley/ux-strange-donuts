@@ -1,0 +1,89 @@
+$block: '.quantity-input';
+$border: 0 solid #dbdbdb;
+$border-radius: 3px;
+$modifier--text-color: #888;
+
+
+// #{$block} {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+  
+//   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+//   border-radius: $border-radius;
+  
+//   &:focus {
+//     background: red;
+//   }
+// }
+
+#{$block}__modifier,
+#{$block}__screen {
+  user-select: none;
+  outline: none;
+}
+
+#{$block}__modifier {
+  padding: .7rem;
+  width: 3rem;
+  font-size: 1.5rem;
+  
+  border: $border;
+  text-align: center;
+//   text-shadow: 0 1px 0 rgba(#fff, .6);
+  
+  cursor: pointer;
+  
+  &:hover {
+  background-color:  rgba(0, 0, 0, 0.5);
+  }
+  
+  &--left {
+    border-radius: $border-radius 0 0 $border-radius;
+  }
+  
+  &--right {
+    border-radius: 0 $border-radius $border-radius 0;
+  }
+}
+
+
+#{$block}__screen {
+    width: 3rem;
+    margin: .7rem;
+    font-size: 2.5rem;
+    color: white;
+  font-weight: 500;
+  font-family: Omnes;
+  border: 0;
+  border-top: $border;
+  border-bottom: $border;
+  text-align: center;
+  background-color: transparent;
+}
+
+
+
+.quantity-input {
+  display: flex;
+
+  align-items: center;
+  text-align: center;
+  
+  color: #333;
+  font-family: Omnes;
+  font-style: normal;
+  font-weight: 500;
+  background-color: transparent;
+}
+.quantity-input__modifier {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 100px;
+    border: 1px solid #FFFFFF;
+    height: 42px;
+    width: 42px;
+}
