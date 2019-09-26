@@ -8,13 +8,13 @@ import Quantity from '../components/quantityPicker.js'
 import "../components/omnes.css"
 import "../components/styles.scss"
 import "../components/sliderStyle/productPage.scss"
-// import "../components/320.scss"
-// import "../components/340.scss"
-// import "../components/360.scss"
-// import "../components/400.scss"
-// import "../components/to389.scss"
-// import "../components/to768.scss"
-// import "../components/ipads.scss"
+import "../components/320.scss"
+import "../components/340.scss"
+import "../components/360.scss"
+import "../components/400.scss"
+import "../components/to389.scss"
+import "../components/to768.scss"
+import "../components/ipads.scss"
 
 // const DonutsWrap = styled.div`
 //     width: 100%;
@@ -72,13 +72,6 @@ const ProductQty = styled.div`
 const QtyTitle = styled.h4`
     font-family: Omnes;
 `
-// const ProductQtyPicker = styled.div`
-//     display: flex;
-//     flex-direction: row;
-// `
-// const ProductBtn=styled.span`
-//     width: 100%;
-// `
 const CheckOutBtn=styled.button`
     width: 100%;
     background: rgba(0, 0, 0, 0.75);
@@ -88,13 +81,18 @@ const CheckOutBtn=styled.button`
 const ImgWrap=styled.div`
     width: 100%;
 `
+const ImgShadow=styled.div`   
+background: radial-gradient(56.26% 58.33% at 50% 50%, #010101 0%, #2D6C4E 100%);
+opacity: 0.5;
+`
 const GreenBackground = props => (
-    <ProductItem className="carousel-item greenbck">
+    <ProductItem id="carousel-item" className="greenbck">
     <ImgWrap className="imageWrap">
         <ProductImg src={props.itemImage}  className="carousel-item-image"/>
+        <ImgShadow/>
       </ImgWrap>
       <ProductInfo className="carousel-info">
-          <ProductTop class="carouself-info-top">
+          <ProductTop id ="carouself-info-top" class="carouself-info-top">
               <ProductPrice className="item_price">{props.price}</ProductPrice>
               <ProductTitle className="item_title">{props.title}</ProductTitle>
               <ProductCategoryCalories className="item-category-info">
@@ -107,7 +105,7 @@ const GreenBackground = props => (
               <QtyTitle className="qty_title">QUANTITY</QtyTitle>
               <Quantity className="QtyPicker"></Quantity>
           </ProductQty>
-          <CheckOutBtn className="addToBag">ADD TO BAG</CheckOutBtn>
+          <CheckOutBtn className="addToBag"><h2>ADD TO BAG</h2></CheckOutBtn>
       </ProductInfo>
     </ProductItem>
   )
@@ -178,6 +176,9 @@ const Products = () => {
     
     return (
 <div class="product-body">
+    <header>
+        <NavBar></NavBar>
+    </header>
 <div class="carousel">
   <div class="carousel__nav">
    <span id="moveLeft" class="carousel__arrow">
