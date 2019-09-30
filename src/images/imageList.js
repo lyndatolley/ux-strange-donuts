@@ -30,9 +30,12 @@ import latte from "./menu/drinks/thumbnails/latte.png";
 import nitro from "./menu/drinks/thumbnails/nitroBrew.png";
 import realNitro from "./menu/drinks/coffee/nitrobrew.png";
 import regularDrip from "./menu/drinks/coffee/regularDrip.png";
-import twoPercent from "./menu/drinks/thumbnails/milk.png";
-import chocolate from "./menu/drinks/thumbnails/chocolate.png";
-import strawberry from "./menu/drinks/thumbnails/strawberry.png";
+import twoPercentthumb from "./menu/drinks/thumbnails/milk.png";
+import chocolatethumb from "./menu/drinks/thumbnails/chocolate.png";
+import strawberrythumb from "./menu/drinks/thumbnails/strawberry.png";
+import strawberry from "./menu/drinks/milk/strawberry.png";
+import chocolate from "./menu/drinks/milk/chocolate.png";
+import TOpercent from "./menu/drinks/milk/2percent.png";
 import bottle from "./menu/drinks/thumbnails/water.png";
 
 import increase from "./icons/plus.svg";
@@ -62,15 +65,19 @@ const imageList = {
     coffee: drip,
     lattes: latte,
     brew: nitro,
-    two: twoPercent,
-    chocoM: chocolate,
-    berry: strawberry,
+    two: twoPercentthumb,
+    chocoM: chocolatethumb,
+    berry: strawberrythumb,
     water: bottle,
     turd_thB: TurdThmb,
     plus: increase,
     minus: decrease,
     nitro: realNitro,
     dripCoffee: regularDrip,
+    regularMilk: TOpercent,
+    straw: strawberry,
+    coldCocoa: chocolate,
+
 
 
 };

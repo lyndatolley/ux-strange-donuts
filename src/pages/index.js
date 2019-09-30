@@ -245,7 +245,7 @@ const Home = () => {
           <h3 className="sectionTitle" id="strange">Stranger</h3>
           <div className="donut_sections">
             <a className="strange_wrap">
-              <div className="turd_content">
+              <div className="turd_content" href="./slides-copy/#turdBurgler">
                 <img src={imageList.turd_thB} class="turd_thumb"/>
                 <div className="strangeText">
                   <h3 className="strangeTitle1">Introducing the</h3>
@@ -259,7 +259,8 @@ const Home = () => {
             <div className="classics">
                <h3 className="sectionTitle">Classics</h3>
                <div className="donut_sections">
-                  <ThumbnailpinkRainbow href = "/rainbowpony"
+                  <ThumbnailpinkRainbow 
+                  href = "slides-copy#rainbowPony"
                      id = "pink"
                      title="Rainbow Pony"
                      donutImage= {imageList.rainbow}
@@ -411,4 +412,4 @@ const Home = () => {
     </div>  
    )
 }
-export default Home 
+export default Home; 
