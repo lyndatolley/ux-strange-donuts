@@ -28,6 +28,8 @@ import pie from "./menu/treats/handpie.png";
 import drip from "./menu/drinks/thumbnails/dripCoffee.png";
 import latte from "./menu/drinks/thumbnails/latte.png";
 import nitro from "./menu/drinks/thumbnails/nitroBrew.png";
+import realNitro from "./menu/drinks/coffee/nitrobrew.png";
+import regularDrip from "./menu/drinks/coffee/regularDrip.png";
 import twoPercent from "./menu/drinks/thumbnails/milk.png";
 import chocolate from "./menu/drinks/thumbnails/chocolate.png";
 import strawberry from "./menu/drinks/thumbnails/strawberry.png";
@@ -67,6 +69,8 @@ const imageList = {
     turd_thB: TurdThmb,
     plus: increase,
     minus: decrease,
+    nitro: realNitro,
+    dripCoffee: regularDrip,
 
 
 };

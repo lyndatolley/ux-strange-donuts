@@ -110,10 +110,13 @@ const GreenBackground = props => (
     </ProductItem>
   )
   const BlueBackground = props => (
-    <ProductItem className="carousel-item bluebck">
-      <ProductImg src={props.itemImage} className="carousel-item-image"/>
+    <ProductItem id="carousel-item" className="greenbck">
+    <ImgWrap className="imageWrap">
+        <ProductImg src={props.itemImage}  className="carousel-item-image"/>
+        <ImgShadow/>
+      </ImgWrap>
       <ProductInfo className="carousel-info">
-          <ProductTop class="carouself-info-top">
+          <ProductTop id ="carouself-info-top" class="carouself-info-top">
               <ProductPrice className="item_price">{props.price}</ProductPrice>
               <ProductTitle className="item_title">{props.title}</ProductTitle>
               <ProductCategoryCalories className="item-category-info">
@@ -126,15 +129,18 @@ const GreenBackground = props => (
               <QtyTitle className="qty_title">QUANTITY</QtyTitle>
               <Quantity className="QtyPicker"></Quantity>
           </ProductQty>
-          <CheckOutBtn className="addToBag">ADD TO BAG</CheckOutBtn>
+          <CheckOutBtn className="addToBag"><h2>ADD TO BAG</h2></CheckOutBtn>
       </ProductInfo>
     </ProductItem>
   )
   const RedBackground = props => (
-    <ProductItem className="carousel-item redbck">
-      <ProductImg src={props.itemImage}  className="carousel-item-image"/>
+    <ProductItem id="carousel-item" className="greenbck">
+    <ImgWrap className="imageWrap">
+        <ProductImg src={props.itemImage}  className="carousel-item-image"/>
+        <ImgShadow/>
+      </ImgWrap>
       <ProductInfo className="carousel-info">
-          <ProductTop class="carouself-info-top">
+          <ProductTop id ="carouself-info-top" class="carouself-info-top">
               <ProductPrice className="item_price">{props.price}</ProductPrice>
               <ProductTitle className="item_title">{props.title}</ProductTitle>
               <ProductCategoryCalories className="item-category-info">
@@ -147,15 +153,18 @@ const GreenBackground = props => (
               <QtyTitle className="qty_title">QUANTITY</QtyTitle>
               <Quantity className="QtyPicker"></Quantity>
           </ProductQty>
-          <CheckOutBtn className="addToBag">ADD TO BAG</CheckOutBtn>
+          <CheckOutBtn className="addToBag"><h2>ADD TO BAG</h2></CheckOutBtn>
       </ProductInfo>
     </ProductItem>
   )
   const PinkBackground = props => (
-    <ProductItem className="carousel-item pinkbck">
-      <ProductImg src={props.itemImage} className="carousel-item-image"/>
+    <ProductItem id="carousel-item" className="greenbck">
+    <ImgWrap className="imageWrap">
+        <ProductImg src={props.itemImage}  className="carousel-item-image"/>
+        <ImgShadow/>
+      </ImgWrap>
       <ProductInfo className="carousel-info">
-          <ProductTop class="carouself-info-top">
+          <ProductTop id ="carouself-info-top" class="carouself-info-top">
               <ProductPrice className="item_price">{props.price}</ProductPrice>
               <ProductTitle className="item_title">{props.title}</ProductTitle>
               <ProductCategoryCalories className="item-category-info">
@@ -168,80 +177,145 @@ const GreenBackground = props => (
               <QtyTitle className="qty_title">QUANTITY</QtyTitle>
               <Quantity className="QtyPicker"></Quantity>
           </ProductQty>
-          <CheckOutBtn className="addToBag">ADD TO BAG</CheckOutBtn>
+          <CheckOutBtn className="addToBag"><h2>ADD TO BAG</h2></CheckOutBtn>
       </ProductInfo>
     </ProductItem>
   )
-const Products = () => {
+  const PinkCookieBackground = props => (
+    <ProductItem id="carousel-item" className="pinkbck">
+    <ImgWrap className="imageWrap">
+        <ProductImg src={props.itemImage}  className="carousel-item-image pink-cookie"/>
+        <ImgShadow/>
+      </ImgWrap>
+      <ProductInfo className="carousel-info">
+          <ProductTop id ="carouself-info-top" class="carouself-info-top">
+              <ProductPrice className="item_price">{props.price}</ProductPrice>
+              <ProductTitle className="item_title">{props.title}</ProductTitle>
+              <ProductCategoryCalories className="item-category-info">
+                 <ProductCategory className="item_category">{props.category}</ProductCategory>
+                 <ProductCalories className="item_calories">{props.calories}</ProductCalories>
+              </ProductCategoryCalories>
+          </ProductTop>
+          <ProductDescrip className="item_description">{props.description}</ProductDescrip>
+          <ProductQty className="product-qty">
+              <QtyTitle className="qty_title">QUANTITY</QtyTitle>
+              <Quantity className="QtyPicker"></Quantity>
+          </ProductQty>
+          <CheckOutBtn className="addToBag"><h2>ADD TO BAG</h2></CheckOutBtn>
+      </ProductInfo>
+    </ProductItem>
+  )
+class Products extends React.Component {
+    
+
+    render (){
     
     return (
-<div class="product-body">
-    <header>
-        <NavBar></NavBar>
-    </header>
-<div class="carousel">
-  <div class="carousel__nav">
-   <span id="moveLeft" class="carousel__arrow">
-        <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
-    <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
-</svg>
-    </span>
-    <span id="moveRight" class="carousel__arrow" >
-      <svg class="carousel__icon"  width="24" height="24" viewBox="0 0 24 24">
-  <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
-</svg>    
-    </span>
-  </div>
-  <div className="pages">
-            <GreenBackground 
-            className="carousel-item--01"
-            id="greenbck"
-            itemImage = {imageList.turdBurgler}
-            price="$5.00"
-            title="Turd Burgler"
-            category="stranger"
-            calories="789 calories"
-            description="Two chocolate cake donuts smothered in cookie butter glaze. Oreo chocolate chip cookie dough. With fudge drizzle."
-            />
-             {/* <PinkBackground 
-            className="carousel-item--02"
-            itemImage= {imageList.rainbow}
-            price="$1.25"
-            title="Rainbow Pony"
-            category="classic"
-            calories="419 calories"
-            description="Sprinkles. Blue frosting. What else do you need?"
-            />
-              <RedBackground 
-            className="carousel-item--03"
-            itemImage= {imageList.glazed}
-            price="$1.25"
-            title="Glazed"
-            category="classic"
-            calories="419 calories"
-            description="Just a classic glazed."
-            />
-             <GreenBackground 
-            className="carousel-item--04"
-            itemImage = {imageList.vFatSteve}
-            price="$1.25"
-            title="Vanille Fat Steve"
-            category="classic"
-            calories="375 calories"
-            description="Long John’s long forgotten cousin, Fat Steve."
-            />
-             <BlueBackground 
-            className="carousel-item--05"
-            itemImage = {imageList.cFatSteve}
-            price="$1.25"
-            title="Chocolate Fat Steve"
-            category="classic"
-            calories="375 calories"
-            description="Long John’s long forgotten cousin, Fat Steve."
-            /> */}
+        
+    <div className="product-body">
+            <header>
+                <NavBar></NavBar>
+            </header>
+        <div className="carousel">
+        <div className="carousel__nav">
+        <span id="moveLeft" className="carousel__arrow" onClick={this.slideLeft}>
+        <svg className="carousel__icon" width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.8507 24.0657L2 13.215L12.8507 2.36432" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+            </span>
+            <span id="moveRight" className="carousel__arrow" onClick={this.slideRight}>
+            <svg className="carousel__icon" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.4109 3.00001L24.0779 14.0312L13.0467 24.6983" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+            </span>
         </div>
-        </div>
+        <div className="pages">
+                    <GreenBackground 
+                    className="carousel-item--01"
+                    id="turdBurgler"
+                    itemImage = {imageList.turdBurgler}
+                    price="$5.00"
+                    title="Turd Burgler"
+                    category="stranger"
+                    calories="789 calories"
+                    description="Two chocolate cake donuts smothered in cookie butter glaze. Oreo chocolate chip cookie dough. With fudge drizzle."
+                    />
+                    <PinkBackground 
+                    className="carousel-item--02"
+                    id="rainbowPony"
+                    itemImage= {imageList.rainbow}
+                    price="$1.25"
+                    title="Rainbow Pony"
+                    category="classic"
+                    calories="419 calories"
+                    description="Sprinkles. Blue frosting. What else do you need?"
+                    />
+                    <RedBackground 
+                    className="carousel-item--03"
+                    id="glazed"
+                    itemImage= {imageList.glazed}
+                    price="$1.25"
+                    title="Glazed"
+                    category="classic"
+                    calories="419 calories"
+                    description="Just a classic glazed."
+                    />
+                    <GreenBackground 
+                    className="carousel-item--04"
+                    id="vanillaFatSteve"
+                    itemImage = {imageList.vFatSteve}
+                    price="$1.25"
+                    title="Vanille Fat Steve"
+                    category="classic"
+                    calories="375 calories"
+                    description="Long John’s long forgotten cousin, Fat Steve."
+                    />
+                    <BlueBackground 
+                    className="carousel-item--05"
+                    id="ChocolateFatSteve"
+                    itemImage = {imageList.cFatSteve}
+                    price="$1.25"
+                    title="Chocolate Fat Steve"
+                    category="classic"
+                    calories="375 calories"
+                    description="Long John’s long forgotten cousin, Fat Steve."
+                    />
+                    {/* creations */}
+                     <BlueBackground 
+                    className="carousel-item--06"
+                    id="PBJ"
+                    itemImage = {imageList.pbj}
+                    price="$2.25"
+                    title="PBJ (Grape)"
+                    category="creations"
+                    calories="450 calories"
+                    description="Start your day with a little bit of Peanut Butter Jelly Time."
+                    />
+                    <GreenBackground 
+                    className="carousel-item--07"
+                    id="frenchToast"
+                    itemImage = {imageList.frenchToast}
+                    price="$2.25"
+                    title="French Toast"
+                    category="creation"
+                    calories="325 calories"
+                    description="Delight yourself with a little bit of French Toast."
+                    />
+                    <PinkCookieBackground 
+                    className="carousel-item--08"
+                    id="cookieMonster"
+                    itemImage= {imageList.cookeMonster}
+                    price="$2.25"
+                    title="Rainbow Pony"
+                    category="creation"
+                    calories="400 calories"
+                    description="It’ll make you say, “Oh nom nom nom nom nom.” "
+                    />
+                </div>
+                </div>
         </div>
     )
+                }
 }
-export default Products
+export default Products;

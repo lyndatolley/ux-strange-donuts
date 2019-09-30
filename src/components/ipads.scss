@@ -134,15 +134,20 @@
     top: 8%;
     z-index: 130;
     right: 1%;
+    background: white;
 }
 #bag_hide{
     z-index: 110;
+    right: 1%;
+    top: 1%;
+    position: absolute;
 }
 #exit{
     position: absolute;
     z-index: 120;
     right: 0%;
-    top: 1%;
+    top: 0%;
+    background-color: white;
 }
 
 .navVisible{

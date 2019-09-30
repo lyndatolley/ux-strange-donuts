@@ -11,6 +11,7 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    'classnames',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
