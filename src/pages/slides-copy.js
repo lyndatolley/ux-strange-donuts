@@ -63,7 +63,7 @@ class ProductSlider extends React.Component {
                     <div className="slider__slides pages">
                         {slides.map((slide,index) =>(
                             <div
-                            className={classNames('slider__slide', {'s--active':activeSlide===index, 's--prev': prevSlide===index})}
+                            className={classNames('slider__slide',  {'s--active':activeSlide===index, 's--prev': prevSlide===index})}
                             key={slide.index} id={slide.className}>
                             <div className='carousel-item ProductItem' >
                               <div className="ImgWrap ImageWrap" id={slide.id}>
@@ -96,18 +96,18 @@ class ProductSlider extends React.Component {
                         ))}
                     </div>
                     <div className="carousel_nav">
-                        <span id="moveLeft" className="slider__control" onClick={() => this.changeSlides(-1)}>
+                        <a id="moveLeft" className="slider__control" onClick={() => this.changeSlides(-1)}>
                             <svg className="carousel__icon" width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12.8507 24.0657L2 13.215L12.8507 2.36432" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                        </span>
-                        <span id="moveRight" className="slider__control slider__control__right" onClick={() => this.changeSlides(1)}>
+                        </a>
+                        <a id="moveRight" className="slider__control slider__control__right" onClick={() => this.changeSlides(1)}>
                             <svg className="carousel__icon" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M13.4109 3.00001L24.0779 14.0312L13.0467 24.6983" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                        </span>
+                        </a>
                     </div>
-                </div>
+                </div> 
             </div>
         )
     }

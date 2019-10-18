@@ -19,5 +19,13 @@ module.exports = {
         path: path.join(__dirname, `src`, `images`),
       },
     },
+    `gatsby-plugin-transition-link`,
+    `gatsby-plugin-page-transitions`,
+    {
+      resolve: 'gatsby-plugin-page-transitions',
+      options: {
+        transitionTime: 500
+      }
+    }
   ],
 }
